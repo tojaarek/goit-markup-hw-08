@@ -1,0 +1,82 @@
+.modal {
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: $bannerTitleColour;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: fixed;
+  z-index: 2;
+  transition-property: visibility, transform;
+  transform: translateX(-50%) translateY(-50%);
+  transition-duration: 2;
+  visibility: visible;
+  animation-name: modalFrame;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+  &__button {
+    width: 30px;
+    height: 30px;
+    background-color: $bannerTitleColour;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-background {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
+  transition-property: visibility;
+  visibility: visible;
+  display: flex;
+  animation-name: modalOpen;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes modalOpen {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes modalFrame {
+  0% {
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  100% {
+    top: 50%;
+  }
+}

@@ -1,0 +1,30 @@
+.address {
+  &__city-street {
+    color: $bannerTitleColour;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  &__item {
+    margin-bottom: 9px;
+  }
+  &__link {
+    color: $footerContactColour;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+
+    &:hover,
+    &:focus {
+      color: $accentColour;
+    }
+  }
+}

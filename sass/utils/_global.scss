@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: $titleColour;
+  font-family: $defaultFonts;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  &--header {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+  &--banner {
+    text-align: center;
+  }
+  &--footer {
+    @include flexJustifyCenter;
+  }
+}
+.section {
+  padding: 94px 0;
+
+  &__headline {
+    color: $titleColour;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &--team {
+    background-color: $filterButtonColour;
+  }
+}

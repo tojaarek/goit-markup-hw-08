@@ -1,0 +1,25 @@
+@mixin mainButton {
+  color: $bannerTitleColour;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: $accentColour;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@mixin flexJustifyCenter {
+  display: flex;
+  justify-content: center;
+}
+@mixin footerHeadline {
+  color: $bannerTitleColour;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
