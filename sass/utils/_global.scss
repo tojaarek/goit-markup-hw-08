@@ -37,7 +37,7 @@ ul {
   }
 }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &__headline {
     color: $titleColour;
@@ -60,6 +60,9 @@ ul {
     }
   }
 }
+.section {
+  padding: 60px 0;
+}
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -67,5 +70,8 @@ ul {
       margin-top: 24px;
       margin-bottom: 25px;
     }
+  }
+  .section {
+    padding: 94px 0;
   }
 }
