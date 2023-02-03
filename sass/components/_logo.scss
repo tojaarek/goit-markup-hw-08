@@ -1,13 +1,28 @@
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   color: $accentColour;
-  margin-right: 93px;
+  margin-right: 284px;
+  margin-left: 15px;
   &--header {
     color: $logoColour;
   }
   &--footer {
     color: $bannerTitleColour;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+    margin-right: 83px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+  font-size: 26px;
+  margin-right: 93px;
+}
 }
