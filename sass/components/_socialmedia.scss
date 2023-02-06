@@ -25,34 +25,59 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color, fill;
 
-    &:hover,
-    &:focus {
-      fill: $bannerTitleColour;
-      background-color: $accentColour;
-    }
     &--footer {
       fill: $bannerTitleColour;
       background-color: $footerSocialmediaBackground;
-
-      &:hover,
-      &:focus {
-        background-color: $accentColour;
-      }
     }
-  }
-  &__icon {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 .socialmedia-box {
-  display: flex;
   flex-direction: column;
-  padding-top: 12px;
-  padding-left: 70px;
+  align-items: center;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 0;
+  margin-bottom: 60px;
 
   &__headline {
     @include footerHeadline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socialmedia-box {
+    padding-top: 5px;
+    padding-left: 160px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .socialmedia {
+    &__link {
+      &:hover,
+      &:focus {
+        fill: $bannerTitleColour;
+        background-color: $accentColour;
+      }
+      &--footer {
+        &:hover,
+        &:focus {
+          background-color: $accentColour;
+        }
+      }
+    }
+    &__icon {
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .socialmedia-box {
+    align-items: flex-start;
+    text-align: start;
+    padding-top: 12px;
+    padding-left: 70px;
   }
 }

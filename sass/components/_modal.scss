@@ -1,8 +1,8 @@
 .modal {
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: $bannerTitleColour;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,7 +27,7 @@
     border-radius: 50%;
     cursor: pointer;
     margin-top: 8px;
-    margin-left: 490px;
+    margin-left: 412px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,5 +78,26 @@
   }
   100% {
     top: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+
+    &__button {
+      margin-left: 412px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    &__button {
+      margin-left: 490px;
+    }
   }
 }

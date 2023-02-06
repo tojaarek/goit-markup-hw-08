@@ -1,9 +1,10 @@
 .newsletter {
   @include flexJustifyCenter;
+  flex-wrap: wrap;
 
   &--position {
-    margin-left: 78px;
-    padding-top: 12px;
+    margin-left: 0;
+    padding-top: 0;
   }
   &__headline {
     @include footerHeadline;
@@ -11,10 +12,11 @@
     &--column {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
   }
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -34,7 +36,6 @@
     &--margin {
       display: flex;
       align-items: center;
-      margin-top: 36px;
       margin-left: 12px;
       padding-left: 42px;
       width: 200px;
@@ -43,5 +44,43 @@
   }
   &__icon {
     margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter {
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-left: 0;
+    &--position {
+      margin-left: 78px;
+      padding-top: 12px;
+    }
+    &__headline {
+      &--column {
+        align-items: flex-start;
+      }
+    }
+    &__input {
+      width: 358px;
+    }
+    &__button {
+      &--margin {
+        margin-top: 36px;
+      }
+    }
+    &__icon {
+      margin-left: 24px;
+    }
   }
 }

@@ -34,6 +34,8 @@ ul {
   }
   &--footer {
     @include flexJustifyCenter;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .section {
@@ -58,6 +60,12 @@ ul {
       margin-top: 16px;
       margin-bottom: 16px;
     }
+    &--footer {
+      @include flexJustifyCenter;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
   }
 }
 .section {
@@ -69,6 +77,10 @@ ul {
     &--header {
       margin-top: 24px;
       margin-bottom: 25px;
+    }
+    &--footer {
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
   .section {

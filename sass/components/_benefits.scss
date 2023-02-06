@@ -42,44 +42,21 @@
     }
 
     &__icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 354px;
-      height: 120px;
-      background-color: $filterButtonColour;
-      margin-bottom: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 4px;
     }
     &__title {
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
       text-align: start;
       margin-left: auto;
       margin-right: auto;
       width: 354px;
     }
     &__subtitle {
-      color: $subtitleColour;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      margin: 10px auto 30px auto;
       width: 354px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     .benefits {
-      max-width: 1200px;
-      min-width: 320px;
-      margin-left: auto;
-      margin-right: auto;
-
       &__item {
         flex-basis: calc(100% / 5);
       }
@@ -88,30 +65,18 @@
         margin-right: 30px;
       }
       &__icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 270px;
-        height: 120px;
-        background-color: $filterButtonColour;
         margin-bottom: 30px;
         border-radius: 4px;
         margin-left: 0;
         margin-right: 0;
       }
       &__title {
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        text-align: start;
+        margin-left: 0;
+        margin-right: 0;
         width: 270px;
       }
       &__subtitle {
-        color: $subtitleColour;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
         margin-top: 10px;
         margin-bottom: 0;
         width: 270px;

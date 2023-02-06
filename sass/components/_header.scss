@@ -2,13 +2,17 @@
   border-bottom: 1px solid $headerBorderBottom;
 }
 .logo {
+  display: flex;
+  justify-content: center;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
   color: $accentColour;
-  margin-right: 284px;
-  margin-left: 15px;
-  &--header {
+  &--header-margin {
+    margin-right: 284px;
+    margin-left: 15px;
+  }
+  &--header-colour {
     color: $logoColour;
   }
   &--footer {
@@ -124,9 +128,11 @@
     display: none;
   }
   .logo {
-    font-size: 24px;
-    margin-right: 83px;
-    margin-left: 15px;
+    text-align: start;
+    &--header-margin {
+      margin-right: 83px;
+      margin-left: 15px;
+    }
   }
   .navigation {
     display: flex;
@@ -216,8 +222,11 @@
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    margin-right: 93px;
-    margin-left: 0;
+    display: inline;
+    &--header-margin {
+      margin-right: 93px;
+      margin-left: 0;
+    }
   }
   .navigation {
     display: flex;
