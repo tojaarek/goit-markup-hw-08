@@ -149,12 +149,13 @@
         <ul class="team">
           <li class="team__item">
             <picture>
-              <source srcset="images/team-member-1-450.webp" type="image/webp" media="(max-width: 450px)">
-              <source srcset="images/team-member-1-354.webp" type="image/webp" media="(max-width: 354px)">
-              <source srcset="images/team-member-1-270.webp" type="image/webp" media="(max-width: 270px)">
-              <img src="images/team-member-1.jpg" alt="John Doe Product Designer"
-                srcset="images/team-member-1-354.jpg 354w, images/team-member-1-450.jpg 450w, images/team-member-1-540.jpg 540w, images/team-member-1-708.jpg 708w, images/team-member-1-900.jpg 900w"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vh" />
+              <source srcset="images/team-member-1-450.webp 450w, image/team-member-1-900.webp 900w" type="image/webp"
+                media="(max-width: 450px)" sizes="(min-width: 480px) 450px, 100vh" height="460">
+              <source srcset="images/team-member-1-354.webp 354w, image/team-member-1-708.webp 708w" type="image/webp"
+                media="(max-width: 354px)" sizes="(min-width: 768px) 354px, 100vh" height="374">
+              <source srcset="images/team-member-1-270.webp 270w, image/team-member-1-540.webp 540w" type="image/webp"
+                media="(max-width: 270px)" sizes="(min-width: 1200px) 270px, 100vh" height="260">
+
             </picture>
             <h3 class="team__name">John Doe</h3>
             <p class="team__position">Product Designer</p>
@@ -187,13 +188,15 @@
           </li>
           <li class="team__item">
             <picture>
-              <source
-                srcset="images/team-member-2.webp 270px, images/team-member-2-354.webp 354w, images/team-member-2-450.webp 450w, images/team-member-2-540.webp 540w, images/team-member-2-708.webp 708w, images/team-member-2-900.webp 900w"
-                type="image/webp"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vh">
-              <img src="images/team-member-2.jpg" alt="John Doe Product Designer"
+              <source srcset="images/team-member-2-450.webp 450w, image/team-member-2-900.webp 900w" type="image/webp"
+                media="(max-width: 450px)" sizes="(min-width: 480px) 450px, 100vh" height="460">
+              <source srcset="images/team-member-2-354.webp 354w, image/team-member-2-708.webp 708w" type="image/webp"
+                media="(max-width: 354px)" sizes="(min-width: 768px) 354px, 100vh" height="374">
+              <source srcset="images/team-member-2-270.webp 270w, image/team-member-2-540.webp 540w" type="image/webp"
+                media="(max-width: 270px)" sizes="(min-width: 1200px) 270px, 100vh" height="260">
+              <img src="images/team-member-2.jpg" alt="John Doe Frontend Developer"
                 srcset="images/team-member-2-354.jpg 354w, images/team-member-2-450.jpg 450w, images/team-member-2-540.jpg 540w, images/team-member-2-708.jpg 708w, images/team-member-2-900.jpg 900w"
-                sizes="(min-width: 1200px) 270px 260px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vh" />
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vh" />
             </picture>
             <h3 class="team__name">John Doe</h3>
             <p class="team__position">Frontend Developer</p>
@@ -225,7 +228,17 @@
             </ul>
           </li>
           <li class="team__item">
-            <img src="images/team-member-3.jpg" alt="John Doe Marketing" width="270" height="260" />
+            <picture>
+              <source srcset="images/team-member-3-450.webp 450w, image/team-member-3-900.webp 900w" type="image/webp"
+                media="(max-width: 450px)" sizes="(min-width: 480px) 450px, 100vh" height="460">
+              <source srcset="images/team-member-3-354.webp 354w, image/team-member-3-708.webp 708w" type="image/webp"
+                media="(max-width: 354px)" sizes="(min-width: 768px) 354px, 100vh" height="374">
+              <source srcset="images/team-member-3-270.webp 270w, image/team-member-3-540.webp 540w" type="image/webp"
+                media="(max-width: 270px)" sizes="(min-width: 1200px) 270px, 100vh" height="260">
+              <img src="images/team-member-3.jpg" alt="John Doe Marketing"
+                srcset="images/team-member-3-354.jpg 354w, images/team-member-3-450.jpg 450w, images/team-member-3-540.jpg 540w, images/team-member-3-708.jpg 708w, images/team-member-3-900.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vh" />
+            </picture>
             <h3 class="team__name">John Doe</h3>
             <p class="team__position">Marketing</p>
             <ul class="socialmedia">
@@ -256,7 +269,17 @@
             </ul>
           </li>
           <li class="team__item">
-            <img src="images/team-member-4.jpg" alt="John Doe UI Designer" width="270" height="260" />
+            <picture>
+              <source srcset="images/team-member-4-450.webp 450w, image/team-member-4-900.webp 900w" type="image/webp"
+                media="(max-width: 450px)" sizes="(min-width: 480px) 450px, 100vh" height="460">
+              <source srcset="images/team-member-4-354.webp 354w, image/team-member-4-708.webp 708w" type="image/webp"
+                media="(max-width: 354px)" sizes="(min-width: 768px) 354px, 100vh" height="374">
+              <source srcset="images/team-member-4-270.webp 270w, image/team-member-4-540.webp 540w" type="image/webp"
+                media="(max-width: 270px)" sizes="(min-width: 1200px) 270px, 100vh" height="260">
+              <img src="images/team-member-4.jpg" alt="John Doe UI Designer"
+                srcset="images/team-member-4-354.jpg 354w, images/team-member-4-450.jpg 450w, images/team-member-4-540.jpg 540w, images/team-member-4-708.jpg 708w, images/team-member-4-900.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vh" />
+            </picture>
             <h3 class="team__name">John Doe</h3>
             <p class="team__position">UI Designer</p>
             <ul class="socialmedia">
