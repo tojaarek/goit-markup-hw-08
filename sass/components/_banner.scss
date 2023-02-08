@@ -29,11 +29,27 @@
     }
   }
 }
+
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .banner {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(50%, rgba(47, 48, 58, 0.4)),
+        color-stop(50%, rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/baner-background-mobile@2x.jpg");
+    background-image: -o-linear-gradient(
+        top,
+        rgba(47, 48, 58, 0.4) 50%,
+        rgba(47, 48, 58, 0.4) 50%
+      ),
+      url("../images/baner-background-mobile@2x.jpg");
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4) 50%,
@@ -53,11 +69,27 @@
       url(../images/baner-background-tablet.jpg);
     background-size: cover;
   }
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .banner {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(50%, rgba(47, 48, 58, 0.4)),
+          color-stop(50%, rgba(47, 48, 58, 0.4))
+        ),
+        url("../images/baner-background-tablet@2x.jpg");
+      background-image: -o-linear-gradient(
+          top,
+          rgba(47, 48, 58, 0.4) 50%,
+          rgba(47, 48, 58, 0.4) 50%
+        ),
+        url("../images/baner-background-tablet@2x.jpg");
       background-image: linear-gradient(
           to bottom,
           rgba(47, 48, 58, 0.4) 50%,
@@ -91,11 +123,27 @@
       }
     }
   }
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .banner {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(50%, rgba(47, 48, 58, 0.4)),
+          color-stop(50%, rgba(47, 48, 58, 0.4))
+        ),
+        url("../images/baner-background@2x.jpg");
+      background-image: -o-linear-gradient(
+          top,
+          rgba(47, 48, 58, 0.4) 50%,
+          rgba(47, 48, 58, 0.4) 50%
+        ),
+        url("../images/baner-background@2x.jpg");
       background-image: linear-gradient(
           to bottom,
           rgba(47, 48, 58, 0.4) 50%,
