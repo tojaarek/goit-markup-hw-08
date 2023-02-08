@@ -136,14 +136,16 @@
   }
   .navigation {
     display: flex;
-
-    &:last-child {
-      margin-right: 101px;
-    }
     &__item {
       color: $titleColour;
-      margin-right: 60px;
       position: relative;
+
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+      &:last-child {
+        margin-right: 101px;
+      }
     }
     &__link {
       color: $titleColour;
@@ -229,15 +231,16 @@
     }
   }
   .navigation {
-    display: flex;
-
-    &:last-child {
-      margin-right: 345px;
-    }
     &__item {
       color: $titleColour;
-      margin-right: 46px;
       position: relative;
+
+      &:not(:last-child) {
+        margin-right: 46px;
+      }
+      &:last-child {
+        margin-right: 345px;
+      }
     }
     &__link {
       &--active {
