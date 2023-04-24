@@ -21,6 +21,7 @@ Live preview: https://tojaarek.github.io/goit-markup-hw-08/
 «A5» The mobile menu script is linked in HTML as a separate file, mobile-menu.js.
 
 <b>MOBILE MENU SCRIPT</b>
+
 In the workshop, take a look at a complete example of creating a mobile menu with an already written script
 
 <b>Markup</b>
